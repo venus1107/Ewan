@@ -1,0 +1,459 @@
+/*  styling scrollbars  */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #a5aaad;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c9eee1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #052d31;
+}
+ body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  height: 14vh;  
+   margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: #597272;
+    background-size: cover;
+    overflow: scroll;
+    position: sticky;
+}
+
+ header {
+    position: fixed;
+    background: #052d31;
+    padding: 20px;
+    width: 100%;
+    height: 50px;
+  }
+
+  .left_area h3 {
+    color: rgb(24, 218, 33);
+    text-transform: uppercase;
+    margin: 0 20;
+    font-size: 30px;
+    font-weight: 900;
+  }
+
+  .left_area span{
+    color: rgb(245, 245, 245);
+  }
+
+h1 {
+  color: black;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 900;
+    text-align: center;
+    margin-left: 300px;
+}
+
+#content{
+  overflow: scroll;
+}
+
+.container {
+  background-color: white;
+  box-shadow: 0 14px 40px rgba(0,0,0,0.25), 
+      0 10px 10px rgba(0,0,0,0.22);
+  position: fixed;
+  overflow: hidden;
+  width: 1200px;
+ height: 1000px;
+  margin-top: 700px;
+}
+
+#logo {
+    height: 10px;
+    right: 235px;
+    bottom: 70px; 
+    position: relative;
+}
+
+.form-container {
+  position: absolute;
+  top: 0;
+  height: 200%;
+  width: 900px;
+  transition: all 0.6s ease-in-out;
+} 
+
+.container form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.container.right-panel-active .register-container {
+  transform: translateX(100%);
+}
+
+.container.right-panel-active .register-container {
+  transform: translateX(100%);
+  opacity: 1;
+  z-index: 5;
+  animation: show 0.6s;
+}
+
+.input-box1{
+  width: 200px;
+  margin-left: 50px;
+  }
+
+  form .input-box1 span.details{
+  display: block;
+  font-weight: 520;
+  margin-bottom: 5px;
+  color: black;
+  font-size: 14px;
+}
+
+.user-details .input-box1 input{
+  height: 30px;
+  width: 100%;
+  outline: none;
+  font-size: 14px;
+  padding-left: 0px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.user-details .input-box2 input{
+  height: 30px;
+  width: 100%;
+  outline: none;
+  font-size: 14px;
+  padding-left: 0px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+  margin-right: 350px;
+}
+
+  form .input-box2 span.details{
+  display: block;
+  font-weight: 520;
+  margin-bottom: 5px;
+  color: black;
+  font-size: 14px;
+}
+
+.user-details .input-box9 input{
+  height: 30px;
+  width: 20%;
+  outline: none;
+  font-size: 14px;
+  padding-left: 0px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+  margin-right: 350px;
+}
+
+  form .input-box9 span.details{
+  display: block;
+  font-weight: 520;
+  margin-bottom: 5px;
+  color: black;
+  font-size: 14px;
+}
+
+.user-details .input-box10 input{
+  height: 30px;
+  width: 20%;
+  outline: none;
+  font-size: 14px;
+  padding-left: 0px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+  margin-right: 350px;
+}
+
+  form .input-box10 span.details{
+  display: block;
+  font-weight: 520;
+  margin-bottom: 5px;
+  color: black;
+  font-size: 14px;
+}
+
+.user-details .input-box1 input:focus,
+.user-details .input-box1 input:valid{
+  border-color: #052d31;
+}
+
+.user-details .input-box2 input:focus,
+.user-details .input-box2 input:valid{
+  border-color: #052d31;
+}
+
+ form .gender-details .gender-title{
+  font-size: 14px;
+  font-weight: 520px;
+  color: black;
+  margin-left: 50px;
+ }
+
+}
+
+form .purok-details .purok-title{
+ font-size: 14px;
+ font-weight: 520px;
+ color: black;
+ margin-left: 50px;
+}
+
+ form .category{
+   display: flex;
+   width: 30%;
+   margin: 10px 0 ;
+   justify-content: space-between;
+   margin-left: 50px;
+ }
+ form .category label{
+   display: flex;
+   align-items: center;
+   cursor: pointer; 
+   font-size: 15px;
+   font-weight: 520px;
+     margin-right: 40px;
+     color: black;
+ }
+
+ #dot1:checked ~ .category label .one,
+ #dot2:checked ~ .category label .two,
+ 
+ 
+ .user-details .input-box3 select{
+  height: 30px;
+  width: 90%;
+  outline: none;
+  font-size: 14px;
+  padding-left: 0px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+ form .input-box3 span.details{
+  display: block;
+  font-weight: 520;
+  margin-bottom: 5px;
+  color: black;
+  font-size: 14px;
+  margin-left: 50px;
+}
+
+ .user-details .input-box5 select{
+  height: 30px;
+  width: 120%;
+  outline: none;
+  font-size: 14px;
+  padding-left: 0px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+ form .input-box5 span.details{
+  display: block;
+  font-weight: 520;
+  margin-bottom: 5px;
+  color: black;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+
+ .user-details .input-box6 input{
+  height: 30px;
+  width: 125%;
+  outline: none;
+  font-size: 14px;
+  padding-left: 0px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+ form .input-box6 span.details{
+  display: block;
+  font-weight: 520;
+  margin-bottom: 5px;
+  color: black;
+  margin-left: 30px;
+  font-size: 14px;
+}
+
+.input-box7 span.details{
+  margin-top: 75px;
+  margin-left: 1020px;
+  display: block;
+  font-weight: 520;
+  color: black;
+  font-size: 14px;
+}
+
+.wrapper{
+  margin-top: 10px;
+  margin-left: 1020px;
+  position: relative;
+  height: 110px;
+  width: 120px;
+  border-radius: 10px;
+  background: #fff;
+  border: 2px dashed #c2cdda;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.wrapper.active{
+  border: none;
+}
+.wrapper .image{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.wrapper .icon{
+  font-size: 40px;
+  color: #2F4F4F;
+}
+.wrapper .text{
+  font-size: 14px;
+  font-weight: 500;
+  color: #5B5B7B;
+}
+.wrapper #cancel-btn i{
+  position: absolute;
+  font-size: 20px;
+  right: 15px;
+  top: 15px;
+  color: #2F4F4F;
+  cursor: pointer;
+  display: none;
+}
+.wrapper.active:hover #cancel-btn i{
+  display: block;
+}
+.wrapper #cancel-btn i:hover{
+  color: #e74c3c;
+}
+.wrapper .file-name{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  padding: 8px 0;
+  font-size: 10px;
+  color: #fff;
+  display: none;
+  background:#2F4F4F;
+}
+.wrapper.active:hover .file-name{
+  display: block;
+}
+.container #custom-btn{
+  margin-top: 20px;
+  display: block;
+  width: 120px;
+  margin-left: 1020px;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: #052d31;
+}
+
+#registration {
+  border-radius: 20px;
+  border: 1px solid #2F4F4F;
+  background-color: #052d31;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+margin-left: 520px;
+margin-top: 90px;
+position: absolute;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+button:focus {
+  outline: none;
+}
+
+button.ghost {
+  background-color: transparent;
+  border-color: #FFFFFF;
+}
+
+.input-box8 span.details{
+  margin-top: 20px;
+  margin-left: 1000px;
+  display: block;
+  font-weight: 520;
+  color: black;
+  font-size: 14px;
+}
+
+.id_upload  input{
+  margin-left: 1000px;
+  margin-top: 15px;
+  outline: none;
+  font-size: 14px;
+
+}
+
+.id_upload_reg input{
+	margin-left: 1000px;
+	margin-top: 15px;
+	outline: none;
+	font-size: 14px;
+}
